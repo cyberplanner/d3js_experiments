@@ -10,7 +10,11 @@
   </head>
   <body>
     <p>Hey there!</p>
+
     <div id="chart">
+    </div>
+
+    <div id="app">
     </div>
 
     <script>
@@ -28,6 +32,12 @@
         .append('h3')
         .text("Testing apending element y'all!")
         .style("color", "red");
+
+
+      d3.select('#app')
+        .append('a')
+        .text('Testing adding a link with a href attribute')
+        .attr("href", "http://google.com")
     </script>
   </body>
 </html>
