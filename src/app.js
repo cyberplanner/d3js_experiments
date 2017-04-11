@@ -31,6 +31,13 @@ var rect = canvas.append("rect")
                   .attr("height", 70)
                   .attr("fill", "blue");
 
+var line =  canvas.append("line")
+                  .attr("y1", 100)
+                  .attr("x1", 2)
+                  .attr("y2", 200)
+                  .attr("x2", 300)
+                  .attr("stroke", "green")
+                  .attr("stroke-width", 2)
 
 
 // var appendElmToBody = d3.select("body")
