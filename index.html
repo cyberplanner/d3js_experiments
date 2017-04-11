@@ -3,7 +3,7 @@
   <head>
     <!-- <meta charset="utf-8"> -->
     <title>D3.js Experiments</title>
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="css/master.css">
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script> -->
     <script type="text/javascript" src="http://d3js.org/d3.v4.min.js"></script>
     <!-- <script type="text/javascript" src="/src/app.js"></script> -->
@@ -16,8 +16,7 @@
     <script>
     d3.select('p').text("Hello world!");
 
-    d3.select('body').append('h3').text('Yo!');
-
+    // A simple chart
     d3.select('#chart')
       .selectAll("div")
       .data([4, 8, 15, 16, 23, 42])
@@ -25,6 +24,7 @@
       .append("div")
       .style("height", (d)=> d + "px");
 
+      d3.select('body').append('h3').text("Testing apending element y'all!");
     </script>
   </body>
 </html>
